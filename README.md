@@ -21,7 +21,7 @@ Circuitpython and C++ based measurement system for Photovoltaic Installations. U
  - Circuit Python:  Circuitpython .uf2, device code
  - GUI:             code.py for device, .html code with .js elements for GUI control, Arduino C++ code, web Serial or WLAN websocket control
  - bootloader:      Atmel SAMD bootloader for JLink
-(https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-py)
+[https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-py](https://learn.adafruit.com/how-to-program-samd-bootloaders)
 
 
  
