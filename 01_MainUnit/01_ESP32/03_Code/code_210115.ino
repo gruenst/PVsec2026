@@ -1,4 +1,4 @@
-// AA-device: receive measured data from satellite devices, central node point
+// Main Unit: receive measured data from satellite devices, central node point
 // consists of: microcontroller (M5stack), LoRa Radio card (RFM96), RealTime Clock (DS1307)
 // The M5stack contains: LiPo battery charging, microSD Card slot, WiFi interface, TFT display and 3 buttons
 // function: 2 buttons for entering identifier; one button for measurement (2nd press stores data on SD card)
@@ -42,7 +42,7 @@ bool Saved = false;         // prevents from saving the same result multiple tim
 bool FirstTime = true;   // writing the header to the SD card is only done once at the first SAVE operation
 bool TftReset = true;       // TFT is cleared after measurement, not when changing string characters
 bool ClampsOnly = false;
-const char* SSID = "GME_AA"; 
+const char* SSID = "MAIN"; 
 const char* PASSWORD = "testpass";
 bool TriggerMeasure = false;      // measurement triggered from WLAN interface instead of button press
 bool TriggerSave = false;        // save to file triggered from WLAN interface instead of button press
@@ -113,7 +113,7 @@ void onWsEvent(AsyncWebSocket * server, AsyncWebSocketClient * client, AwsEventT
 
 
 
-void setup()    // initialize components, startup screen with GME logo
+void setup()    // initialize components, startup screen with logo
 {
   //start M5stack without SD-Card and Serial;  SD-card is initialized further below
   M5.begin(true,false,false,true);   // LCD and I2C enable
