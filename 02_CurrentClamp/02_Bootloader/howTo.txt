@@ -1,0 +1,19 @@
+ After printing PCB:
+ 1) flash a basic bootloader on PCB using JLINK hardware, steps:
+  - connect JLINK to PC and pins to PCB (1-voltage, 2-gnd, -1-IO -2-clk)
+  - power PCB (Vref) with another arduino or DC voltage source
+  - use command line from folder with .bin file
+  - flash bootloader by executing software "JLinkExe"
+  - select JLinkExe-options ('connect' -> ATSAMD51G19A - SWD -> default)
+  - execute command 'loadbin Clamp_bootloader_260901.bin,0'
+  - select JLinkExe-options ('r' -> 'g')
+ 2) get CircuitPython for "ItsyBitsy M4 Express", upload .uf2 to board
+ https://circuitpython.org/board/itsybitsy_m4_express/
+ 3) upload circuitpython library bundle
+ https://circuitpython.org/libraries
+ 4) upload code.py
+ ...and modify to your own liking...
+ 
+
+
+
