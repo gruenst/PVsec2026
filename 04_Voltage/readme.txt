@@ -8,5 +8,5 @@ These components should be on the board:
 Embedding everything on a single PCB would be beneficial, but using an industry standard for 1500V string voltages seems reasonable.
 
 DC connection via panel mount plugs (banana or solar connectors).
-ON/OFF switch e.g.
+Power switch, with LED.
 USB and SMA antenna plugs recommended.
