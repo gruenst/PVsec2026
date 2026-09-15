@@ -1,5 +1,6 @@
 # Open Source Hardware for Mobile String Power Acquisition of Solar Parks
 Circuitpython and C++ based measurement system for Photovoltaic Installations. Up to 10 current clamps can be integrated, additional voltage, current and module temperature acquisition.
+<img width="919" height="544" alt="00" src="https://github.com/user-attachments/assets/bdb6dcd5-519d-40ff-9078-73196e931b74" />
 
 
 ## Purpose
